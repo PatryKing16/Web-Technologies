@@ -23,6 +23,7 @@
     width: 80%;
     margin: auto;
     z-index: 2;
+    position: relative;
 }
 
 .content .logo {
@@ -74,3 +75,19 @@
     backdrop-filter: blur(10px);
 }
 
+.content .button{
+    text-decoration: none;
+    color: #fff;
+    padding: 50px 30px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+.content .button:hover{
+    border-color: #cd7771;
+    background: #cd7771;
+    color: black;
+    font-weight: 2;
+}

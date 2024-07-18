@@ -43,9 +43,9 @@
               
            <!-- li*4>img -->
        <ul class="thumb">
-         <li><img src="images/thumb1.png" ></li>
-         <li><img src="images/thumb2.png" ></li>
-         <li><img src="images/thumb3.png" ></li>
+         <li><img src="images/thumb1.png" onclick="imgSlide('images/img1.png'); changeclr('#017143')"></li>
+         <li><img src="images/thumb2.png" onclick="imgSlide('images/img2.png'); changeclr('#eb7495')"></li>
+         <li><img src="images/thumb3.png" onclick="imgSlide('images/img3.png'); changeclr('#d752b1')"></li>
        </ul>
 
 <!-- THIS IS SOCIAL MEDIA ICONS CODE  -->
@@ -57,8 +57,18 @@
 
     </section>
 
-<script type="text/javascript">
+<script>
 
+       // camel case function names
+       // This function is for big image change
+function imgSlide(anything){
+    document.querySelector('.starbucks').src=anything;
+} 
+// This is for circle color change
+function changeclr(color){
+    const circle=document.querySelector('.circle');
+    circle.style.background=color;
+}
 </script>
 
 </body>

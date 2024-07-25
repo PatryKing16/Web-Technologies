@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>England Map</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187.2697727142033!2d-2.2436124287562467!3d53.476688797554054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1ea7cb0c317%3A0xf1d7b5a128a03c2b!2sTurtle%20Bay%20Manchester%20Oxford%20Rd!5e0!3m2!1spl!2suk!4v1721899985357!5m2!1spl!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </body>
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+        .footer-section h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            background-color: #222;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer-section p {
+            margin: 10px 0;
+        }
+        .footer-section p a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+        .footer-section p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Map iframe container styles */
+        .iframe-container {
+            text-align: center;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="con.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="seccontact.html">Contact</a>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187.2697727142033!2d-2.2436124287562467!3d53.476688797554054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1ea7cb0c317%3A0xf1d7b5a128a03c2b!2sTurtle%20Bay%20Manchester%20Oxford%20Rd!5e0!3m2!1spl!2suk!4v1721899985357!5m2!1spl!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a leading company in our industry with over 10 years of experience. Our mission is to provide the best services to our customers.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="seccontact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <span><strong>Address:</strong></span> 123 Fake Street, Springfield, USA<br>
+                    <span><strong>Phone:</strong></span> +1 234 567 890<br>
+                    <span><strong>Email:</strong></span> info@fakeemail.com
+                </p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">Instagram</a> |
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Your Company Name | Designed by Your Company
+        </div>
+    </div>
+</body>
 </html>

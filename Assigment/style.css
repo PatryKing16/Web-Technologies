@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Nunito&family=Poppins:wght@300&family=Roboto:wght@300;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #BEDBFB, #CECFF8);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-semicircle {
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   width: 2900px;
+   height: 2300px;
+   background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 20%;
+    padding: 20px 50px;
+    
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    left: 0%;
+}
+
+.cart {
+    width: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.content h1 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 16px 20px;
+    background: linear-gradient(to top right, #9ECBFF, #FF87E7);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2), 0 6px 20px 5px rgba(0,0,0,0.19);
+    margin-bottom: 20px;
+}
+
+.feature-img {
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+    transform: translateX(50%);
+    width: 45%;
+}
+
+.arrow-icons {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    display: flex;
+    gap: 20px;
+}
+
+.arrow-icons img {
+    width: 50px;
+    cursor: pointer;
+}

@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.body1 p {
     background: linear-gradient(to bottom, #BEDBFB, #CECFF8);
 }
 
@@ -20,15 +20,15 @@ body {
 }
 
 .background-semicircle {
-   position: absolute;
-   top: 50%;
-   left: 100%;
-   width: 2900px;
-   height: 2300px;
-   background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
-   border-radius: 50%;
-   transform: translate(-50%, -50%);
-   z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 2900px;
+    height: 2300px;
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .navbar {
@@ -37,7 +37,7 @@ body {
     align-items: center;
     left: 20%;
     padding: 20px 50px;
-    
+
 }
 
 .logo {
@@ -93,7 +93,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     border-radius: 2px;
-    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2), 0 6px 20px 5px rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
     margin-bottom: 20px;
 }
 
@@ -117,3 +117,12 @@ nav ul li a {
     width: 50px;
     cursor: pointer;
 }
+
+
+.body2 p { font-family: Arial, sans-serif; padding: 20px; background-color:#f4f4f4; } form {
+    background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px
+    rgba(0,0,0,0.1); } .form-group { margin-bottom: 15px; } label { display: block; marginbottom: 5px; } input[type="text"], input[type="email"], textarea { width: 100%; padding:
+    8px; border: 1px solid #ccc; border-radius: 4px; } button { background-color: #0056b3;
+    color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #004494; } 
+    

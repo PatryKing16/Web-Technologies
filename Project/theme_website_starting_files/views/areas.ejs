@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Themed Areas</title> 
+    <link rel="stylesheet" href="/css/styles.css"> 
+</head> 
+<body> 
+    <header> 
+        <h1>Themed Areas</h1> 
+    </header> 
+    <nav> 
+        <a href="/">Home</a> 
+        <a href="/areas">Areas</a> 
+        <a href="/faq">FAQ</a> 
+        <a href="/contact">Contact</a> 
+    </nav> 
+    <main> 
+        <section> 
+            <h2>Explore Our Themed Areas</h2> 
+            <ul> 
+                <% areas.forEach(area => { %> 
+                    <li> 
+                        <h3><%= area.name %></h3> 
+                        <p><%= area.description %></p> 
+                        <a href="/attractions/<%= area.id %>">View Attractions</a> 
+                    </li> 
+                <% }); %> 
+            </ul> 
+        </section> 
+    </main> 
+    <footer> 
+        <p>&copy; 2024 Theme Park. All Rights Reserved.</p> 
+    </footer> 
+</body> 
+</html>

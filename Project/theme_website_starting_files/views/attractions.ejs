@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Attractions</title> 
+    <link rel="stylesheet" href="/css/styles.css"> 
+</head> 
+<body> 
+    <header> 
+        <h1>Attractions</h1> 
+    </header> 
+    <nav> 
+        <a href="/">Home</a> 
+        <a href="/areas">Areas</a> 
+        <a href="/faq">FAQ</a> 
+        <a href="/contact">Contact</a> 
+    </nav> 
+    <main> 
+        <section> 
+            <h2>Rides and Attractions</h2> 
+            <ul> 
+                <% attractions.forEach(attraction => { %> 
+                    <li> 
+                        <h3><%= attraction.name %></h3> 
+                        <p><%= attraction.description %></p> 
+                    </li> 
+                <% }); %> 
+            </ul> 
+        </section> 
+    </main> 
+    <footer> 
+        <p>&copy; 2024 Theme Park. All Rights Reserved.</p> 
+    </footer> 
+</body> 
+</html>

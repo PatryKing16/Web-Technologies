@@ -2,7 +2,7 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const app = express();
-//const db = new sqlite3.Database('./database/theme_park.db'); 
+const db = new sqlite3.Database('./database/theme_park.db'); 
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));

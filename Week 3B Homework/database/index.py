@@ -1,4 +1,4 @@
-import sqlite3
+"""import sqlite3
 
 db = sqlite3.connect("C:\\Users\\Patry\\Desktop\\Studia\\Year 1\\Databases\\database\\nowabaza.db")
 
@@ -36,7 +36,7 @@ for a in all_emp_row:
 
 import sqlite3
 
-con.execute("""SELECT ename, name FROM customer c INNER JOIN emp e ON c.repid = e.empno ORDER BY ename""")
+con.execute(SELECT ename, name FROM customer c INNER JOIN emp e ON c.repid = e.empno ORDER BY ename)
 
 all_rows = con.fetchall()
 last_repname = ""
@@ -53,3 +53,37 @@ for row in all_rows:
     else:
         print("{0}\t {1}".format("", custname))
 db.close()
+
+
+
+Powiedziałeś(-aś):
+hey how can I select all from an emp in sql database using python?
+ChatGPT powiedział:
+ChatGPT
+To select all records from a table named emp in a SQL database using Python, you typically use a database connector like sqlite3 (for SQLite), psycopg2 (for PostgreSQL), or pyodbc (for SQL Server). Below is an example using sqlite3, but the approach is similar for other databases.
+
+Example using sqlite3:
+python
+Skopiuj kod
+import sqlite3"""
+
+import sqlite3
+
+conn = sqlite3.connect("C:\\Users\\Patry\\Desktop\\Studia\\Year 1\\Databases\\database\\nowabaza.db")
+
+# Create a cursor object
+cur = conn.cursor()
+
+# SQL query to select all from the emp table
+cur.execute("SELECT * FROM emp")
+
+# Fetch all results
+rows = cur.fetchall()
+
+# Iterate over the rows and print them
+for row in rows:
+    print(row)
+
+# Close the connection
+conn.close()
+

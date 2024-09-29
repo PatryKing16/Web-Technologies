@@ -12,27 +12,31 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Ensure backgrounds stretch to cover entire viewport even when scrolling */
 .faq-body, .contact-body, .attractions-body, .index-body, .areas-body {
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
 }
 
-/* Header and navigation */
 header {
-    background-color: brown;
-    color: #fff;
     padding: 10px 0;
     text-align: center;
+}
+
+header h1{
+    color: #fff;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
 }
 
 nav {
     text-align: center;
     padding: 15px;
-    background-color: #555;
 }
 
 nav a {
@@ -40,6 +44,11 @@ nav a {
     margin: 0 10px;
     text-decoration: none;
     font-size: 18px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
 }
 
 nav a:hover {
@@ -54,8 +63,6 @@ main {
 
 /* Footer fix */
 footer {
-    background-color: #877c7c;
-    color: #ffffff !important; /* Ensuring footer text color is white */
     text-align: center;
     padding: 10px 0;
     width: 100%;
@@ -63,37 +70,15 @@ footer {
     bottom: 0;
 }
 
-/* Font-specific styles */
-@font-face {
-    font-family: 'SuperFuntime';
-    src: url('/fonts/SuperFuntime-3zpLX.ttf') format('truetype'); /* Using .ttf format for SuperFuntime */
+footer p{
+    color: #ffffff;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
 }
 
-@font-face {
-    font-family: 'SoundDistortion';
-    src: url('/fonts/SoundDistortion-6YzED.otf') format('opentype'); /* Using .otf format for SoundDistortion */
-}
-
-@font-face {
-    font-family: 'Rocketfuel';
-    src: url('/fonts/Rocketfuel-mD2P.otf') format('opentype'); /* Using .otf format for Rocketfuel */
-}
-
-/* Classes for specific themes */
-.font-70s {
-    font-family: 'SuperFuntime'; /* Apply 70s font */
-}
-
-.font-80s {
-    font-family: 'SoundDistortion'; /* Apply 80s font */
-}
-
-.font-90s {
-    font-family: 'Rocketfuel'; /* Apply 90s font */
-}
-
-
-/* FAQ page-specific styles */
 .faq-body {
     background-image: url('/images/70back.jpg');
 }

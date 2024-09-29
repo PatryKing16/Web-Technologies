@@ -52,13 +52,46 @@ main {
     padding: 20px;
 }
 
+/* Footer fix */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #877c7c;
+    color: #ffffff !important; /* Ensuring footer text color is white */
     text-align: center;
     padding: 10px 0;
     width: 100%;
+    position: relative; /* Adjust the footer's position */
+    bottom: 0;
 }
+
+/* Font-specific styles */
+@font-face {
+    font-family: 'SuperFuntime';
+    src: url('/fonts/SuperFuntime-3zpLX.ttf') format('truetype'); /* Using .ttf format for SuperFuntime */
+}
+
+@font-face {
+    font-family: 'SoundDistortion';
+    src: url('/fonts/SoundDistortion-6YzED.otf') format('opentype'); /* Using .otf format for SoundDistortion */
+}
+
+@font-face {
+    font-family: 'Rocketfuel';
+    src: url('/fonts/Rocketfuel-mD2P.otf') format('opentype'); /* Using .otf format for Rocketfuel */
+}
+
+/* Classes for specific themes */
+.font-70s {
+    font-family: 'SuperFuntime'; /* Apply 70s font */
+}
+
+.font-80s {
+    font-family: 'SoundDistortion'; /* Apply 80s font */
+}
+
+.font-90s {
+    font-family: 'Rocketfuel'; /* Apply 90s font */
+}
+
 
 /* FAQ page-specific styles */
 .faq-body {
@@ -74,20 +107,6 @@ footer {
 
 .faq-container h2 {
     color: #333;
-}
-
-.faq-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.faq-list li {
-    margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace; /* Retro font style */
-}
-
-.faq-list li p {
-    color: #666;
 }
 
 /* Contact page-specific styles */

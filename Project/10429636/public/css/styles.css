@@ -1,19 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
+/* General styles */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background-color: #f4f4f4;
 }
 
+/* Ensure backgrounds stretch to cover entire viewport even when scrolling */
+.faq-body, .contact-body, .attractions-body, .index-body, .areas-body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Header and navigation */
 header {
-    background-color:brown;
+    background-color: brown;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-}
-
-h1 {
-    margin: 0;
 }
 
 nav {
@@ -33,7 +46,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Main content styles */
 main {
+    flex: 1;
     padding: 20px;
 }
 
@@ -42,23 +57,146 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 
-section {
-    margin: 20px 0;
+/* FAQ page-specific styles */
+.faq-body {
+    background-image: url('/images/70back.jpg');
 }
 
-section h2 {
+.faq-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.faq-container h2 {
     color: #333;
 }
 
-section p {
+.faq-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.faq-list li {
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Retro font style */
+}
+
+.faq-list li p {
     color: #666;
 }
 
+/* Contact page-specific styles */
+.contact-body {
+    background-image: url('/images/80back.jpg');
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    color: #333;
+}
+
+/* Attractions page-specific styles */
+.attractions-body {
+    background-image: url('/images/90back.jpg');
+}
+
+.attractions-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.attractions-container h2 {
+    color: #333;
+}
+
+/* Index page-specific styles */
+.index-body {
+    background-image: url('/images/homeback.jpg');
+}
+
+.index-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Index page text styling */
+h1 {
+    font-family: 'Impact', sans-serif; /* Retro font for heading */
+    color: #ff6347; /* Bright color for retro vibe */
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace; /* Retro font style */
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Attractions grid on the index page */
+.attractions-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.attraction-70s, .attraction-80s, .attraction-90s {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.attraction-70s h3, .attraction-80s h3, .attraction-90s h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+/* Carousel/Banner on the index page */
+.carousel {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Areas page-specific styles */
+.areas-body {
+    background-image: url('/images/areaback.jpg');
+}
+
+.areas-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Contact form styles */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -67,6 +205,7 @@ section p {
 .contact-form label {
     display: block;
     margin: 10px 0 5px;
+    color: #333;
 }
 
 .contact-form input,
@@ -76,6 +215,7 @@ section p {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #333;
 }
 
 .contact-form button {

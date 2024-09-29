@@ -1,32 +1,76 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Welcome to the Theme Park</title> 
-    <link rel="stylesheet" href="/css/styles.css"> 
-</head> 
-<body> 
-    <header> 
-        <h1><%= title %></h1> 
-    </header> 
-    <nav> 
-        <a href="/">Home</a> 
-        <a href="/areas">Areas</a> 
-        <a href="/faq">FAQ</a> 
-        <a href="/contact">Contact</a> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the 7/8/9 Theme Park</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="index-body"> <!-- Class for background -->
+    <header>
+        <h1>7/8/9 Theme Park - Relive the Magic of the 70s, 80s, and 90s!</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/areas">Areas</a>
+        <a href="/faq">FAQ</a>
+        <a href="/contact">Contact</a>
         <a href="/attractions">Attractions</a>
-    </nav> 
-    <main> 
-        <section> 
-            <h2>Welcome to the most exciting Theme Park!</h2> 
-            <p>Experience the thrill of a lifetime.</p> 
-            
-        </section> 
-    </main> 
-    <footer> 
-        <p>&copy; 2024 Theme Park. All Rights Reserved.</p> 
-    </footer> 
-</body> 
-</html> 
- 
+    </nav>
+    <main>
+        <section class="index-container">
+            <h2>A Trip Down Memory Lane</h2>
+            <p>
+                Step into a world where the best of the 70s, 80s, and 90s come to life! 
+                The 7/8/9 Theme Park is a nostalgic journey through three of the most iconic decades, 
+                where music, fashion, and thrilling rides collide to create the ultimate retro experience.
+            </p>
+
+            <h2>Our Iconic Attractions</h2>
+            <div class="attractions-grid">
+                <!-- 70s Attractions -->
+                <div class="attraction-70s">
+                    <h3>The Groovy 70s</h3>
+                    <p>
+                        Get your bell-bottoms on and dive into the funky disco-themed roller coaster! 
+                        The 70s section also includes a retro ferris wheel with stunning park views and 
+                        groovy tunes to take you back in time.
+                    </p>
+                </div>
+
+                <!-- 80s Attractions -->
+                <div class="attraction-80s">
+                    <h3>The Radical 80s</h3>
+                    <p>
+                        Relive the arcade era with neon lights, fast-paced action, and thrilling rides like 
+                        the Synthwave Racer. Don’t miss the Laser Tag arena that brings the 80s vibe back 
+                        with a futuristic twist!
+                    </p>
+                </div>
+
+                <!-- 90s Attractions -->
+                <div class="attraction-90s">
+                    <h3>The Extreme 90s</h3>
+                    <p>
+                        Feel the adrenaline with the grunge-inspired roller coaster that’ll leave you 
+                        breathless! The 90s skate park attraction and a VR experience let you dive deep into 
+                        the coolest moments of the decade.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Nostalgic Carousel/Banner -->
+            <div class="carousel">
+                <!-- You could implement an image carousel with retro images -->
+                <img src="/images/retro-park-1.jpg" alt="Retro Park Attraction 1">
+                <img src="/images/retro-park-2.jpg" alt="Retro Park Attraction 2">
+                <img src="/images/retro-park-3.jpg" alt="Retro Park Attraction 3">
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 7/8/9 Theme Park. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

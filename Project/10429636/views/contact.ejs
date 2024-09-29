@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body class="contact-body">
     <header>
         <h1>Contact Us</h1>
@@ -19,7 +21,8 @@
     </nav>
     <main>
         <section class="contact-container">
-            <h2>If you want to leave feedback or ask any queastions, please use the form.
+            <h2>If you want to leave feedback or ask any queastions, please use the form.</h2>
+            <p>
                 <br><br>
                 Head office contact details:
                 <br>
@@ -34,37 +37,36 @@
                 Office Open: Monday-Friday 8-4:30pm
                 <br>
                 info@themepark.co
-            </h2>
+            </p>
 
-            <!-- Conditionally display thank you message -->
-            <% if (typeof showThankYou !== 'undefined' && showThankYou) { %>
+            <% if (typeof showThankYou !=='undefined' && showThankYou) { %>
                 <div id="thank-you-message" style="color: green; text-align: center; margin-bottom: 20px;">
                     Thank you for contacting us! Redirecting to home page...
                 </div>
                 <script>
-                    // Redirect to home page after 5 seconds
-                    setTimeout(function() {
+                    setTimeout(function () {
                         window.location.href = "/";
                     }, 5000);
                 </script>
-            <% } %>
+                <% } %>
 
-            <form class="contact-form" action="/contact" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                    <form class="contact-form" action="/contact" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
+                        <button type="submit">Send</button>
+                    </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 7/8/9 Theme Park. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>

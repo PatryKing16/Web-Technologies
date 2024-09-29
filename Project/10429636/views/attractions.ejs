@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attractions</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body class="attractions-body">
     <header>
         <h1>Attractions</h1>
@@ -15,18 +17,22 @@
         <a href="/areas">Areas</a>
         <a href="/faq">FAQ</a>
         <a href="/contact">Contact</a>
-        <a href="/attractions">Attractions</a> 
+        <a href="/attractions">Attractions</a>
     </nav>
     <main>
         <section class="attractions-container">
-            <h2>Rides and Attractions</h2>
+            <h2>Rides and Attractions That We Know You'll Love</h2>
             <ul>
-                <% attractions.forEach(attraction => { %>
+                <% attractions.forEach(attraction=> { %>
                     <li>
-                        <h3><%= attraction.name %></h3>
-                        <p><%= attraction.description %></p>
+                        <h3>
+                            <%= attraction.name %>
+                        </h3>
+                        <p>
+                            <%= attraction.description %>
+                        </p>
                     </li>
-                <% }); %>
+                    <% }); %>
             </ul>
         </section>
     </main>
@@ -34,4 +40,5 @@
         <p>&copy; 2024 7/8/9 Theme Park. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>

@@ -1,5 +1,7 @@
-/* General styles */
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -12,7 +14,11 @@ body {
     background-color: #f4f4f4;
 }
 
-.faq-body, .contact-body, .attractions-body, .index-body, .areas-body {
+.faq-body,
+.contact-body,
+.attractions-body,
+.index-body,
+.areas-body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,7 +31,7 @@ header {
     text-align: center;
 }
 
-header h1{
+header h1 {
     color: #fff;
     text-shadow:
         0.07em 0 black,
@@ -55,22 +61,20 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content styles */
 main {
     flex: 1;
     padding: 20px;
 }
 
-/* Footer fix */
 footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: relative; /* Adjust the footer's position */
+    position: relative;
     bottom: 0;
 }
 
-footer p{
+footer p {
     color: #ffffff;
     text-shadow:
         0.07em 0 black,
@@ -84,8 +88,7 @@ footer p{
 }
 
 .faq-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -94,13 +97,12 @@ footer p{
     color: #333;
 }
 
-/* Contact page-specific styles */
 .contact-body {
     background-image: url('/images/80back.jpg');
 }
 
 .contact-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -110,13 +112,12 @@ footer p{
     color: #333;
 }
 
-/* Attractions page-specific styles */
 .attractions-body {
     background-image: url('/images/90back.jpg');
 }
 
 .attractions-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -126,27 +127,28 @@ footer p{
     color: #333;
 }
 
-/* Index page-specific styles */
 .index-body {
     background-image: url('/images/homeback.jpg');
 }
 
 .index-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-/* Index page text styling */
 h1 {
-    font-family: 'Impact', sans-serif; /* Retro font for heading */
-    color: #ff6347; /* Bright color for retro vibe */
+    font-family: 'Impact', sans-serif;
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Courier New', Courier, monospace; /* Retro font style */
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
     color: #333;
+    font-style: normal;
+    text-align: center;
 }
 
 p {
@@ -154,7 +156,6 @@ p {
     color: #333;
 }
 
-/* Attractions grid on the index page */
 .attractions-grid {
     display: flex;
     justify-content: space-around;
@@ -162,7 +163,9 @@ p {
     margin-top: 20px;
 }
 
-.attraction-70s, .attraction-80s, .attraction-90s {
+.attraction-70s,
+.attraction-80s,
+.attraction-90s {
     flex: 1;
     min-width: 200px;
     padding: 20px;
@@ -171,12 +174,13 @@ p {
     margin: 10px;
 }
 
-.attraction-70s h3, .attraction-80s h3, .attraction-90s h3 {
+.attraction-70s h3,
+.attraction-80s h3,
+.attraction-90s h3 {
     font-family: 'Courier New', Courier, monospace;
     color: #333;
 }
 
-/* Carousel/Banner on the index page */
 .carousel {
     margin-top: 40px;
     display: flex;
@@ -188,19 +192,17 @@ p {
     border-radius: 10px;
 }
 
-/* Areas page-specific styles */
 .areas-body {
     background-image: url('/images/areaback.jpg');
 }
 
 .areas-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
-/* Contact form styles */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
